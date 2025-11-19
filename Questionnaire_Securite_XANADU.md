@@ -4,21 +4,21 @@
 
 - **Total questions** : 35
 - **Domaines couverts** : 10
-- **Critiques (P0)** : 11 actions immédiates
-- **Urgentes (P1)** : 12 actions 
-- **Importantes (P2)** : 9 actions 
-- **Moyen terme (P3)** : 3 actions 
+- **Critiques (P0)** : 11 actions immédiates (< 2 semaines)
+- **Urgentes (P1)** : 12 actions (< 1 mois)
+- **Importantes (P2)** : 9 actions (< 3 mois)
+- **Moyen terme (P3)** : 3 actions (< 6 mois)
 
 ---
 
 ## 🎯 Légende des Priorités
 
-| Priorité | Description |
-|----------|-------------|
-| **P0** | IMMÉDIATE - Vulnérabilité critique |
-| **P1** | URGENTE - Risque élevé |
-| **P2** | IMPORTANTE - Amélioration sécurité |
-| **P3** | MOYEN TERME - Préparation résilience |
+| Priorité | Délai | Description |
+|----------|-------|-------------|
+| **P0** | < 2 semaines | IMMÉDIATE - Vulnérabilité critique |
+| **P1** | < 1 mois | URGENTE - Risque élevé |
+| **P2** | < 3 mois | IMPORTANTE - Amélioration sécurité |
+| **P3** | < 6 mois | MOYEN TERME - Préparation résilience |
 
 ## 🎨 Légende des Criticités
 
@@ -36,7 +36,7 @@
 
 ### 📌 GOUVERNANCE ET POLITIQUE
 
-#### GOV-01 - Une politique de sécurité formelle est-elle définie et appro... 🔴 🟠
+#### GOV-01 - Une politique de sécurité formelle est-elle définie et approuvée par la direction ? 🔴 🟠
 
 **Criticité** : Critique  
 **Priorité** : P1  
@@ -50,7 +50,7 @@
 
 ---
 
-#### GOV-02 - Un RSSI est-il désigné avec rôles et responsabilités clairs ... 🟠 🟠
+#### GOV-02 - Un RSSI est-il désigné avec rôles et responsabilités clairs ? 🟠 🟠
 
 **Criticité** : Élevée  
 **Priorité** : P1  
@@ -64,7 +64,7 @@
 
 ---
 
-#### GOV-03 - Un comité de pilotage sécurité se réunit-il régulièrement ?... 🟡 🟡
+#### GOV-03 - Un comité de pilotage sécurité se réunit-il régulièrement ? 🟡 🟡
 
 **Criticité** : Moyenne  
 **Priorité** : P2  
@@ -81,7 +81,7 @@
 
 ### 📌 GESTION DES IDENTITÉS ET ACCÈS
 
-#### IAM-01 - Au moins 2 contrôleurs de domaine Active Directory sont-ils ... 🔴 🔴
+#### IAM-01 - Au moins 2 contrôleurs de domaine Active Directory sont-ils déployés ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -95,7 +95,7 @@
 
 ---
 
-#### IAM-02 - Les utilisateurs ont-ils des droits limités (pas administrat... 🔴 🔴
+#### IAM-02 - Les utilisateurs ont-ils des droits limités (pas administrateur local) ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -109,7 +109,7 @@
 
 ---
 
-#### IAM-03 - Tous les comptes sont-ils nominatifs (pas de comptes génériq... 🔴 🔴
+#### IAM-03 - Tous les comptes sont-ils nominatifs (pas de comptes génériques) ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -123,7 +123,7 @@
 
 ---
 
-#### IAM-04 - Une politique de mots de passe robustes est-elle appliquée (... 🟠 🟠
+#### IAM-04 - Une politique de mots de passe robustes est-elle appliquée (12+ caractères) ? 🟠 🟠
 
 **Criticité** : Élevée  
 **Priorité** : P1  
@@ -137,7 +137,7 @@
 
 ---
 
-#### IAM-05 - Les accès distants (VPN) sont-ils sécurisés avec MFA ?... 🔴 🟠
+#### IAM-05 - Les accès distants (VPN) sont-ils sécurisés avec MFA ? 🔴 🟠
 
 **Criticité** : Critique  
 **Priorité** : P1  
@@ -154,7 +154,7 @@
 
 ### 📌 PROTECTION DES DONNÉES
 
-#### DATA-01 - Les données sont-elles classifiées (Critiques/Importantes/Mo... 🟠 🟡
+#### DATA-01 - Les données sont-elles classifiées (Critiques/Importantes/Moins critiques) ? 🟠 🟡
 
 **Criticité** : Élevée  
 **Priorité** : P2  
@@ -168,7 +168,7 @@
 
 ---
 
-#### DATA-02 - La stratégie 3-2-1 est-elle appliquée (3 copies, 2 supports,... 🔴 🔴
+#### DATA-02 - La stratégie 3-2-1 est-elle appliquée (3 copies, 2 supports, 1 hors-site) ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -182,7 +182,7 @@
 
 ---
 
-#### DATA-03 - Les sauvegardes sont-elles testées régulièrement (restaurati... 🔴 🔴
+#### DATA-03 - Les sauvegardes sont-elles testées régulièrement (restauration) ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -196,7 +196,7 @@
 
 ---
 
-#### DATA-04 - Les sauvegardes sont-elles protégées contre ransomware (immu... 🔴 🔴
+#### DATA-04 - Les sauvegardes sont-elles protégées contre ransomware (immuables) ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -210,7 +210,7 @@
 
 ---
 
-#### DATA-05 - Les partages sont-ils configurés par service (pas ouverts à ... 🔴 🔴
+#### DATA-05 - Les partages sont-ils configurés par service (pas ouverts à tous) ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -224,7 +224,7 @@
 
 ---
 
-#### DATA-06 - Le chiffrement est-il activé (données au repos et en transit... 🟠 🟠
+#### DATA-06 - Le chiffrement est-il activé (données au repos et en transit) ? 🟠 🟠
 
 **Criticité** : Élevée  
 **Priorité** : P1  
@@ -241,7 +241,7 @@
 
 ### 📌 SÉCURITÉ RÉSEAU
 
-#### NET-01 - Le réseau est-il segmenté en VLANs par service ?... 🟠 🔴
+#### NET-01 - Le réseau est-il segmenté en VLANs par service ? 🟠 🔴
 
 **Criticité** : Élevée  
 **Priorité** : P0  
@@ -255,7 +255,7 @@
 
 ---
 
-#### NET-02 - Un pare-feu d'entreprise est-il déployé avec IDS/IPS ?... 🔴 🔴
+#### NET-02 - Un pare-feu d'entreprise est-il déployé avec IDS/IPS ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -269,7 +269,7 @@
 
 ---
 
-#### NET-03 - Le lien MPLS vers site distant est-il redondé ?... 🟡 🟡
+#### NET-03 - Le lien MPLS vers site distant est-il redondé ? 🟡 🟡
 
 **Criticité** : Moyenne  
 **Priorité** : P2  
@@ -283,7 +283,7 @@
 
 ---
 
-#### NET-04 - Les logs réseau sont-ils centralisés (SIEM) ?... 🟠 🟡
+#### NET-04 - Les logs réseau sont-ils centralisés (SIEM) ? 🟠 🟡
 
 **Criticité** : Élevée  
 **Priorité** : P2  
@@ -300,7 +300,7 @@
 
 ### 📌 SÉCURITÉ DES APPLICATIONS
 
-#### APP-01 - L'ERP est-il accessible uniquement en HTTPS ?... 🔴 🟠
+#### APP-01 - L'ERP est-il accessible uniquement en HTTPS ? 🔴 🟠
 
 **Criticité** : Critique  
 **Priorité** : P1  
@@ -314,7 +314,7 @@
 
 ---
 
-#### APP-02 - L'authentification ERP est-elle centralisée avec AD ?... 🔴 🟠
+#### APP-02 - L'authentification ERP est-elle centralisée avec AD ? 🔴 🟠
 
 **Criticité** : Critique  
 **Priorité** : P1  
@@ -328,7 +328,7 @@
 
 ---
 
-#### APP-03 - La base PostgreSQL est-elle durcie et sécurisée ?... 🔴 🔴
+#### APP-03 - La base PostgreSQL est-elle durcie et sécurisée ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -342,7 +342,7 @@
 
 ---
 
-#### APP-04 - Office 365 est-il sécurisé (MFA, DLP) ?... 🟠 🟠
+#### APP-04 - Office 365 est-il sécurisé (MFA, DLP) ? 🟠 🟠
 
 **Criticité** : Élevée  
 **Priorité** : P1  
@@ -359,7 +359,7 @@
 
 ### 📌 PROTECTION ANTIVIRUS
 
-#### AV-01 - Tous les équipements ont-ils un antivirus/EDR centralisé ?... 🔴 🟠
+#### AV-01 - Tous les équipements ont-ils un antivirus/EDR centralisé ? 🔴 🟠
 
 **Criticité** : Critique  
 **Priorité** : P1  
@@ -373,7 +373,7 @@
 
 ---
 
-#### AV-02 - Les signatures antivirus sont-elles à jour automatiquement ?... 🟠 🟠
+#### AV-02 - Les signatures antivirus sont-elles à jour automatiquement ? 🟠 🟠
 
 **Criticité** : Élevée  
 **Priorité** : P1  
@@ -390,7 +390,7 @@
 
 ### 📌 GESTION VULNÉRABILITÉS
 
-#### VULN-01 - Les mises à jour sont-elles appliquées selon un planning ?... 🔴 🟠
+#### VULN-01 - Les mises à jour sont-elles appliquées selon un planning ? 🔴 🟠
 
 **Criticité** : Critique  
 **Priorité** : P1  
@@ -404,7 +404,7 @@
 
 ---
 
-#### VULN-02 - Des scans de vulnérabilités sont-ils réalisés régulièrement ... 🟡 🟡
+#### VULN-02 - Des scans de vulnérabilités sont-ils réalisés régulièrement ? 🟡 🟡
 
 **Criticité** : Moyenne  
 **Priorité** : P2  
@@ -418,7 +418,7 @@
 
 ---
 
-#### VULN-03 - Un inventaire logiciels/versions est-il maintenu ?... 🟡 🟡
+#### VULN-03 - Un inventaire logiciels/versions est-il maintenu ? 🟡 🟡
 
 **Criticité** : Moyenne  
 **Priorité** : P2  
@@ -435,7 +435,7 @@
 
 ### 📌 POSTES DE TRAVAIL
 
-#### END-01 - Les utilisateurs ont-ils des comptes standards (pas admin lo... 🔴 🔴
+#### END-01 - Les utilisateurs ont-ils des comptes standards (pas admin local) ? 🔴 🔴
 
 **Criticité** : Critique  
 **Priorité** : P0  
@@ -449,7 +449,7 @@
 
 ---
 
-#### END-02 - Les portables sont-ils chiffrés (BitLocker/FileVault) ?... 🟠 🟠
+#### END-02 - Les portables sont-ils chiffrés (BitLocker/FileVault) ? 🟠 🟠
 
 **Criticité** : Élevée  
 **Priorité** : P1  
@@ -463,7 +463,7 @@
 
 ---
 
-#### END-03 - Tous les postes sont-ils joints au domaine AD ?... 🟠 🟡
+#### END-03 - Tous les postes sont-ils joints au domaine AD ? 🟠 🟡
 
 **Criticité** : Élevée  
 **Priorité** : P2  
@@ -480,7 +480,7 @@
 
 ### 📌 SENSIBILISATION
 
-#### AWARE-01 - Un programme de formation sécurité est-il déployé ?... 🟡 🟡
+#### AWARE-01 - Un programme de formation sécurité est-il déployé ? 🟡 🟡
 
 **Criticité** : Moyenne  
 **Priorité** : P2  
@@ -494,7 +494,7 @@
 
 ---
 
-#### AWARE-02 - Une politique d'usage acceptable (AUP) est-elle formalisée ?... 🟡 🟡
+#### AWARE-02 - Une politique d'usage acceptable (AUP) est-elle formalisée ? 🟡 🟡
 
 **Criticité** : Moyenne  
 **Priorité** : P2  
@@ -511,7 +511,7 @@
 
 ### 📌 GESTION DES INCIDENTS
 
-#### INC-01 - Un plan de continuité (PCA) est-il défini et testé ?... 🟠 🟢
+#### INC-01 - Un plan de continuité (PCA) est-il défini et testé ? 🟠 🟢
 
 **Criticité** : Élevée  
 **Priorité** : P3  
@@ -525,7 +525,7 @@
 
 ---
 
-#### INC-02 - Une procédure de réponse aux incidents est-elle documentée ?... 🟠 🟢
+#### INC-02 - Une procédure de réponse aux incidents est-elle documentée ? 🟠 🟢
 
 **Criticité** : Élevée  
 **Priorité** : P3  
@@ -539,7 +539,7 @@
 
 ---
 
-#### INC-03 - Les incidents sont-ils tracés et analysés ?... 🟡 🟢
+#### INC-03 - Les incidents sont-ils tracés et analysés ? 🟡 🟢
 
 **Criticité** : Moyenne  
 **Priorité** : P3  
@@ -555,77 +555,104 @@
 
 
 
-## 📊 Tableau Synthétique
+## 📊 Tableau Synthétique Complet
 
-| ID       | Domaine                        | Question                                              | Criticite   | Priorite   | Etat_XANADU                                               |
-|:---------|:-------------------------------|:------------------------------------------------------|:------------|:-----------|:----------------------------------------------------------|
-| GOV-01   | Gouvernance et Politique       | Une politique de sécurité formelle est-elle défini... | Critique    | P1         | ❌ Non - Aucune politique documentée                      |
-| GOV-02   | Gouvernance et Politique       | Un RSSI est-il désigné avec rôles et responsabilit... | Élevée      | P1         | ⚠️ Partiel - Responsables IT/Departement mais pas de RSSI |
-| GOV-03   | Gouvernance et Politique       | Un comité de pilotage sécurité se réunit-il réguli... | Moyenne     | P2         | ❌ Non - Pas de comité formalisé                          |
-| IAM-01   | Gestion des Identités et Accès | Au moins 2 contrôleurs de domaine Active Directory... | Critique    | P0         | ❌ Non - 1 seul DC (SPOF critique)                        |
-| IAM-02   | Gestion des Identités et Accès | Les utilisateurs ont-ils des droits limités (pas a... | Critique    | P0         | ❌ Non - TOUS les utilisateurs sont admin local           |
-| IAM-03   | Gestion des Identités et Accès | Tous les comptes sont-ils nominatifs (pas de compt... | Critique    | P0         | ❌ Non - Comptes génériques ERP (RH:RH)                   |
-| IAM-04   | Gestion des Identités et Accès | Une politique de mots de passe robustes est-elle a... | Élevée      | P1         | ❌ Non - Paramètres par défaut                            |
-| IAM-05   | Gestion des Identités et Accès | Les accès distants (VPN) sont-ils sécurisés avec M... | Critique    | P1         | ❌ Non - Pas de VPN actuellement                          |
-| DATA-01  | Protection des Données         | Les données sont-elles classifiées (Critiques/Impo... | Élevée      | P2         | ✅ Oui - Classification existante (ERP/RH/Personnel)      |
-| DATA-02  | Protection des Données         | La stratégie 3-2-1 est-elle appliquée (3 copies, 2... | Critique    | P0         | ❌ Non - NAS + 2 disques (pas hors-site)                  |
-| DATA-03  | Protection des Données         | Les sauvegardes sont-elles testées régulièrement (... | Critique    | P0         | ❌ Non - Aucun test documenté                             |
-| DATA-04  | Protection des Données         | Les sauvegardes sont-elles protégées contre ransom... | Critique    | P0         | ❌ Non - Accessibles du réseau                            |
-| DATA-05  | Protection des Données         | Les partages sont-ils configurés par service (pas ... | Critique    | P0         | ❌ Non - NAS 'ouvert à tous'                              |
-| DATA-06  | Protection des Données         | Le chiffrement est-il activé (données au repos et ... | Élevée      | P1         | ⚠️ Partiel - Pas de HTTPS sur ERP                         |
-| NET-01   | Sécurité Réseau                | Le réseau est-il segmenté en VLANs par service ?...   | Élevée      | P0         | ❌ Non - Réseau plat                                      |
-| NET-02   | Sécurité Réseau                | Un pare-feu d'entreprise est-il déployé avec IDS/I... | Critique    | P0         | ❌ Non - Routeur/box basique                              |
-| NET-03   | Sécurité Réseau                | Le lien MPLS vers site distant est-il redondé ?...    | Moyenne     | P2         | ⚠️ Partiel - MPLS SLA 99,9% mais pas de backup            |
-| NET-04   | Sécurité Réseau                | Les logs réseau sont-ils centralisés (SIEM) ?...      | Élevée      | P2         | ❌ Non - Logs locaux                                      |
-| APP-01   | Sécurité des Applications      | L'ERP est-il accessible uniquement en HTTPS ?...      | Critique    | P1         | ❌ Non - HTTP (données en clair)                          |
-| APP-02   | Sécurité des Applications      | L'authentification ERP est-elle centralisée avec A... | Critique    | P1         | ❌ Non - Base locale, comptes génériques                  |
-| APP-03   | Sécurité des Applications      | La base PostgreSQL est-elle durcie et sécurisée ?...  | Critique    | P0         | ❌ Non - Config par défaut probable                       |
-| APP-04   | Sécurité des Applications      | Office 365 est-il sécurisé (MFA, DLP) ?...            | Élevée      | P1         | ⚠️ Partiel - Utilisé mais config inconnue                 |
-| AV-01    | Protection Antivirus           | Tous les équipements ont-ils un antivirus/EDR cent... | Critique    | P1         | ❌ Non - Couverture hétérogène                            |
-| AV-02    | Protection Antivirus           | Les signatures antivirus sont-elles à jour automat... | Élevée      | P1         | ❌ Non - Laissé à discrétion utilisateurs                 |
-| VULN-01  | Gestion Vulnérabilités         | Les mises à jour sont-elles appliquées selon un pl... | Critique    | P1         | ❌ Non - Non contrôlées                                   |
-| VULN-02  | Gestion Vulnérabilités         | Des scans de vulnérabilités sont-ils réalisés régu... | Moyenne     | P2         | ❌ Non - Pas de scans                                     |
-| VULN-03  | Gestion Vulnérabilités         | Un inventaire logiciels/versions est-il maintenu ?... | Moyenne     | P2         | ❌ Non - Pas d'inventaire centralisé                      |
-| END-01   | Postes de Travail              | Les utilisateurs ont-ils des comptes standards (pa... | Critique    | P0         | ❌ Non - Tous admin locaux                                |
-| END-02   | Postes de Travail              | Les portables sont-ils chiffrés (BitLocker/FileVau... | Élevée      | P1         | ❌ Non - Pas de chiffrement                               |
-| END-03   | Postes de Travail              | Tous les postes sont-ils joints au domaine AD ?...    | Élevée      | P2         | ✅ Probablement - À vérifier                              |
-| AWARE-01 | Sensibilisation                | Un programme de formation sécurité est-il déployé ... | Moyenne     | P2         | ❌ Non - Absent                                           |
-| AWARE-02 | Sensibilisation                | Une politique d'usage acceptable (AUP) est-elle fo... | Moyenne     | P2         | ❌ Non - Pas documentée                                   |
-| INC-01   | Gestion des Incidents          | Un plan de continuité (PCA) est-il défini et testé... | Élevée      | P3         | ❌ Non - Pas de PCA                                       |
-| INC-02   | Gestion des Incidents          | Une procédure de réponse aux incidents est-elle do... | Élevée      | P3         | ❌ Non - Pas de procédure                                 |
-| INC-03   | Gestion des Incidents          | Les incidents sont-ils tracés et analysés ?...        | Moyenne     | P3         | ❌ Non - Pas de registre                                  |
+| ID | Domaine | Question Complète | Criticité | Priorité | État |
+|:---:|---------|------------------|-----------|----------|------|
+| GOV-01 | Gouvernance et Politique | Une politique de sécurité formelle est-elle définie et approuvée par la direction ? | 🔴 Critique | 🟠 P1 | ❌ Non - Aucune politique documentée |
+| GOV-02 | Gouvernance et Politique | Un RSSI est-il désigné avec rôles et responsabilités clairs ? | 🟠 Élevée | 🟠 P1 | ⚠️ Partiel - Responsables IT/Departement mais... |
+| GOV-03 | Gouvernance et Politique | Un comité de pilotage sécurité se réunit-il régulièrement ? | 🟡 Moyenne | 🟡 P2 | ❌ Non - Pas de comité formalisé |
+| IAM-01 | Gestion des Identités et Accès | Au moins 2 contrôleurs de domaine Active Directory sont-ils déployés ? | 🔴 Critique | 🔴 P0 | ❌ Non - 1 seul DC (SPOF critique) |
+| IAM-02 | Gestion des Identités et Accès | Les utilisateurs ont-ils des droits limités (pas administrateur local) ? | 🔴 Critique | 🔴 P0 | ❌ Non - TOUS les utilisateurs sont admin loca... |
+| IAM-03 | Gestion des Identités et Accès | Tous les comptes sont-ils nominatifs (pas de comptes génériques) ? | 🔴 Critique | 🔴 P0 | ❌ Non - Comptes génériques ERP (RH:RH) |
+| IAM-04 | Gestion des Identités et Accès | Une politique de mots de passe robustes est-elle appliquée (12+ caractères) ? | 🟠 Élevée | 🟠 P1 | ❌ Non - Paramètres par défaut |
+| IAM-05 | Gestion des Identités et Accès | Les accès distants (VPN) sont-ils sécurisés avec MFA ? | 🔴 Critique | 🟠 P1 | ❌ Non - Pas de VPN actuellement |
+| DATA-01 | Protection des Données | Les données sont-elles classifiées (Critiques/Importantes/Moins critiques) ? | 🟠 Élevée | 🟡 P2 | ✅ Oui - Classification existante (ERP/RH/Pers... |
+| DATA-02 | Protection des Données | La stratégie 3-2-1 est-elle appliquée (3 copies, 2 supports, 1 hors-site) ? | 🔴 Critique | 🔴 P0 | ❌ Non - NAS + 2 disques (pas hors-site) |
+| DATA-03 | Protection des Données | Les sauvegardes sont-elles testées régulièrement (restauration) ? | 🔴 Critique | 🔴 P0 | ❌ Non - Aucun test documenté |
+| DATA-04 | Protection des Données | Les sauvegardes sont-elles protégées contre ransomware (immuables) ? | 🔴 Critique | 🔴 P0 | ❌ Non - Accessibles du réseau |
+| DATA-05 | Protection des Données | Les partages sont-ils configurés par service (pas ouverts à tous) ? | 🔴 Critique | 🔴 P0 | ❌ Non - NAS 'ouvert à tous' |
+| DATA-06 | Protection des Données | Le chiffrement est-il activé (données au repos et en transit) ? | 🟠 Élevée | 🟠 P1 | ⚠️ Partiel - Pas de HTTPS sur ERP |
+| NET-01 | Sécurité Réseau | Le réseau est-il segmenté en VLANs par service ? | 🟠 Élevée | 🔴 P0 | ❌ Non - Réseau plat |
+| NET-02 | Sécurité Réseau | Un pare-feu d'entreprise est-il déployé avec IDS/IPS ? | 🔴 Critique | 🔴 P0 | ❌ Non - Routeur/box basique |
+| NET-03 | Sécurité Réseau | Le lien MPLS vers site distant est-il redondé ? | 🟡 Moyenne | 🟡 P2 | ⚠️ Partiel - MPLS SLA 99,9% mais pas de backu... |
+| NET-04 | Sécurité Réseau | Les logs réseau sont-ils centralisés (SIEM) ? | 🟠 Élevée | 🟡 P2 | ❌ Non - Logs locaux |
+| APP-01 | Sécurité des Applications | L'ERP est-il accessible uniquement en HTTPS ? | 🔴 Critique | 🟠 P1 | ❌ Non - HTTP (données en clair) |
+| APP-02 | Sécurité des Applications | L'authentification ERP est-elle centralisée avec AD ? | 🔴 Critique | 🟠 P1 | ❌ Non - Base locale, comptes génériques |
+| APP-03 | Sécurité des Applications | La base PostgreSQL est-elle durcie et sécurisée ? | 🔴 Critique | 🔴 P0 | ❌ Non - Config par défaut probable |
+| APP-04 | Sécurité des Applications | Office 365 est-il sécurisé (MFA, DLP) ? | 🟠 Élevée | 🟠 P1 | ⚠️ Partiel - Utilisé mais config inconnue |
+| AV-01 | Protection Antivirus | Tous les équipements ont-ils un antivirus/EDR centralisé ? | 🔴 Critique | 🟠 P1 | ❌ Non - Couverture hétérogène |
+| AV-02 | Protection Antivirus | Les signatures antivirus sont-elles à jour automatiquement ? | 🟠 Élevée | 🟠 P1 | ❌ Non - Laissé à discrétion utilisateurs |
+| VULN-01 | Gestion Vulnérabilités | Les mises à jour sont-elles appliquées selon un planning ? | 🔴 Critique | 🟠 P1 | ❌ Non - Non contrôlées |
+| VULN-02 | Gestion Vulnérabilités | Des scans de vulnérabilités sont-ils réalisés régulièrement ? | 🟡 Moyenne | 🟡 P2 | ❌ Non - Pas de scans |
+| VULN-03 | Gestion Vulnérabilités | Un inventaire logiciels/versions est-il maintenu ? | 🟡 Moyenne | 🟡 P2 | ❌ Non - Pas d'inventaire centralisé |
+| END-01 | Postes de Travail | Les utilisateurs ont-ils des comptes standards (pas admin local) ? | 🔴 Critique | 🔴 P0 | ❌ Non - Tous admin locaux |
+| END-02 | Postes de Travail | Les portables sont-ils chiffrés (BitLocker/FileVault) ? | 🟠 Élevée | 🟠 P1 | ❌ Non - Pas de chiffrement |
+| END-03 | Postes de Travail | Tous les postes sont-ils joints au domaine AD ? | 🟠 Élevée | 🟡 P2 | ✅ Probablement - À vérifier |
+| AWARE-01 | Sensibilisation | Un programme de formation sécurité est-il déployé ? | 🟡 Moyenne | 🟡 P2 | ❌ Non - Absent |
+| AWARE-02 | Sensibilisation | Une politique d'usage acceptable (AUP) est-elle formalisée ? | 🟡 Moyenne | 🟡 P2 | ❌ Non - Pas documentée |
+| INC-01 | Gestion des Incidents | Un plan de continuité (PCA) est-il défini et testé ? | 🟠 Élevée | 🟢 P3 | ❌ Non - Pas de PCA |
+| INC-02 | Gestion des Incidents | Une procédure de réponse aux incidents est-elle documentée ? | 🟠 Élevée | 🟢 P3 | ❌ Non - Pas de procédure |
+| INC-03 | Gestion des Incidents | Les incidents sont-ils tracés et analysés ? | 🟡 Moyenne | 🟢 P3 | ❌ Non - Pas de registre |
+
 
 ---
 
 ## 📈 Statistiques par Priorité
 
-### P0 - IMMÉDIATE 
-11 actions critiques à traiter d'urgence :
+### 🔴 P0 - IMMÉDIATE (< 2 semaines)
+**11 actions critiques à traiter d'urgence :**
 - IAM-01, IAM-02, IAM-03, DATA-02, DATA-03, DATA-04, DATA-05, NET-01, NET-02, APP-03, END-01
 
-### P1 - URGENTE 
-12 actions urgentes :
+### 🟠 P1 - URGENTE (< 1 mois)
+**12 actions urgentes :**
 - GOV-01, GOV-02, IAM-04, IAM-05, DATA-06, APP-01, APP-02, APP-04, AV-01, AV-02, VULN-01, END-02
 
-### P2 - IMPORTANTE 
-9 actions importantes :
+### 🟡 P2 - IMPORTANTE (< 3 mois)
+**9 actions importantes :**
 - GOV-03, DATA-01, NET-03, NET-04, VULN-02, VULN-03, END-03, AWARE-01, AWARE-02
 
-### P3 - MOYEN TERME 
-3 actions moyen terme :
+### 🟢 P3 - MOYEN TERME (< 6 mois)
+**3 actions moyen terme :**
 - INC-01, INC-02, INC-03
 
 ---
 
-## 📌 Éléments CAID Garantis
+## 💡 Comment Utiliser ce Questionnaire
 
-Chaque mesure du questionnaire garantit :
-
-- **Confidentialité** : VLANs, droits d'accès, chiffrement
-- **Intégrité** : Audit, pare-feu, signatures numériques
-- **Disponibilité** : Redondance, sauvegardes, PCA
-- **Traçabilité** : Logs centralisés, comptes nominatifs
+1. **Remplissez la colonne "Réponse"** (Oui/Non/Partiel) pour chaque question
+2. **Identifiez les actions P0** à traiter immédiatement (semaines 1-2)
+3. **Planifiez** les P1 (semaines 3-4), P2 (mois 2-3), P3 (mois 4-6)
+4. **Suivez** la remédiation en implémentant les axes proposés
+5. **Auditez** à nouveau tous les 6-12 mois pour mesurer les progrès
 
 ---
 
-*Questionnaire préparé pour XANADU - November 2025*
+## 🔐 Éléments CAID Garantis
+
+Chaque mesure du questionnaire garantit les 4 piliers de sécurité :
+
+| Pilier | Exemples pour XANADU |
+|--------|----------------------|
+| **Confidentialité** | VLANs séparant les données, droits d'accès par service, chiffrement |
+| **Intégrité** | Audit Active Directory, pare-feu validant les flux, comptes nominatifs |
+| **Disponibilité** | Redondance DC, sauvegardes 3-2-1, MPLS SLA 99,9%, PCA |
+| **Traçabilité** | Logs centralisés, comptes nominatifs jamais génériques, audit mensuel |
+
+---
+
+## 📞 Questions Fréquentes
+
+**Q : Comment prioriser si toutes les actions sont critiques ?**  
+R : Suivez l'ordre P0 → P1 → P2 → P3. Les P0 sont réparties sur 2 semaines avec équipes dédiées.
+
+**Q : Puis-je adapter les axes de remédiation ?**  
+R : Oui ! Adaptez-les à votre contexte, budget et capacité. Les axes proposés sont des recommandations.
+
+**Q : Comment suivre la progression ?**  
+R : Remplissez la colonne "Réponse" et refaites l'audit chaque trimestre pour mesurer les avancées.
+
+---
+
+*Questionnaire de sécurité préparé pour XANADU - November 2025*  
+*Conforme ANSSI, ISO 27001, et recommandations cybersécurité*
