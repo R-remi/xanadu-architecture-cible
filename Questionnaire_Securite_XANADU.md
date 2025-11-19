@@ -4,21 +4,21 @@
 
 - **Total questions** : 35
 - **Domaines couverts** : 10
-- **Critiques (P0)** : 11 actions immédiates (< 2 semaines)
-- **Urgentes (P1)** : 12 actions (< 1 mois)
-- **Importantes (P2)** : 9 actions (< 3 mois)
-- **Moyen terme (P3)** : 3 actions (< 6 mois)
+- **Critiques (P0)** : 11 actions immédiates
+- **Urgentes (P1)** : 12 actions 
+- **Importantes (P2)** : 9 actions 
+- **Moyen terme (P3)** : 3 actions 
 
 ---
 
 ## 🎯 Légende des Priorités
 
-| Priorité | Délai | Description |
-|----------|-------|-------------|
-| **P0** | < 2 semaines | IMMÉDIATE - Vulnérabilité critique |
-| **P1** | < 1 mois | URGENTE - Risque élevé |
-| **P2** | < 3 mois | IMPORTANTE - Amélioration sécurité |
-| **P3** | < 6 mois | MOYEN TERME - Préparation résilience |
+| Priorité | Description |
+|----------|-------------|
+| **P0** | IMMÉDIATE - Vulnérabilité critique |
+| **P1** | URGENTE - Risque élevé |
+| **P2** | IMPORTANTE - Amélioration sécurité |
+| **P3** | MOYEN TERME - Préparation résilience |
 
 ## 🎨 Légende des Criticités
 
@@ -600,31 +600,21 @@
 
 ## 📈 Statistiques par Priorité
 
-### 🔴 P0 - IMMÉDIATE (< 2 semaines)
+### 🔴 P0 - IMMÉDIATE
 **11 actions critiques à traiter d'urgence :**
 - IAM-01, IAM-02, IAM-03, DATA-02, DATA-03, DATA-04, DATA-05, NET-01, NET-02, APP-03, END-01
 
-### 🟠 P1 - URGENTE (< 1 mois)
+### 🟠 P1 - URGENTE 
 **12 actions urgentes :**
 - GOV-01, GOV-02, IAM-04, IAM-05, DATA-06, APP-01, APP-02, APP-04, AV-01, AV-02, VULN-01, END-02
 
-### 🟡 P2 - IMPORTANTE (< 3 mois)
+### 🟡 P2 - IMPORTANTE 
 **9 actions importantes :**
 - GOV-03, DATA-01, NET-03, NET-04, VULN-02, VULN-03, END-03, AWARE-01, AWARE-02
 
-### 🟢 P3 - MOYEN TERME (< 6 mois)
+### 🟢 P3 - MOYEN TERME 
 **3 actions moyen terme :**
 - INC-01, INC-02, INC-03
-
----
-
-## 💡 Comment Utiliser ce Questionnaire
-
-1. **Remplissez la colonne "Réponse"** (Oui/Non/Partiel) pour chaque question
-2. **Identifiez les actions P0** à traiter immédiatement (semaines 1-2)
-3. **Planifiez** les P1 (semaines 3-4), P2 (mois 2-3), P3 (mois 4-6)
-4. **Suivez** la remédiation en implémentant les axes proposés
-5. **Auditez** à nouveau tous les 6-12 mois pour mesurer les progrès
 
 ---
 
@@ -638,19 +628,6 @@ Chaque mesure du questionnaire garantit les 4 piliers de sécurité :
 | **Intégrité** | Audit Active Directory, pare-feu validant les flux, comptes nominatifs |
 | **Disponibilité** | Redondance DC, sauvegardes 3-2-1, MPLS SLA 99,9%, PCA |
 | **Traçabilité** | Logs centralisés, comptes nominatifs jamais génériques, audit mensuel |
-
----
-
-## 📞 Questions Fréquentes
-
-**Q : Comment prioriser si toutes les actions sont critiques ?**  
-R : Suivez l'ordre P0 → P1 → P2 → P3. Les P0 sont réparties sur 2 semaines avec équipes dédiées.
-
-**Q : Puis-je adapter les axes de remédiation ?**  
-R : Oui ! Adaptez-les à votre contexte, budget et capacité. Les axes proposés sont des recommandations.
-
-**Q : Comment suivre la progression ?**  
-R : Remplissez la colonne "Réponse" et refaites l'audit chaque trimestre pour mesurer les avancées.
 
 ---
 
